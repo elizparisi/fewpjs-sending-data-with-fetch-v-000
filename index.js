@@ -23,8 +23,8 @@ function submitData(name, email) {
     console.log(object);
   })
   .catch(function(error) {
-    alert("Bad things! Ragnarők!");
-    console.log(error.message);
+     document.body.innerHTML = error.message
+  };
  
 };
 
