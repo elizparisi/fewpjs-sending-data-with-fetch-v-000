@@ -15,7 +15,8 @@ function submitData(name, email) {
     body: JSON.stringify(formData)
   };
   
-    .then(function(response) {
+  fetch("http://localhost:3000/dogs", configObj)
+  .then(function(response) {
     return response.json();
   })
   .then(function(object) {
@@ -24,7 +25,6 @@ function submitData(name, email) {
   .catch(function(error) {
     alert("Bad things! Ragnarők!");
     console.log(error.message);
-  });
  
 };
 
