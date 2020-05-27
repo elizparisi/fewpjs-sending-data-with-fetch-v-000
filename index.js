@@ -23,7 +23,7 @@ function submitData(name, email) {
     
   })
   .catch(function(error) {
-     displayMessage(error.message);
+     document.body.innerHTML = error.message
   });
  
 };
