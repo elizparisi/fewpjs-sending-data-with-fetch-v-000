@@ -20,11 +20,11 @@ function submitData(name, email) {
     return response.json();
   })
   .then(function(object) {
-    console.log(object);
+    
   })
   .catch(function(error) {
      displayMessage(error.message);
-  };
+  });
  
 };
 
