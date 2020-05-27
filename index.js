@@ -16,5 +16,5 @@ function submitData(name, email) {
     body: JSON.stringify(formData)
   };
  
-fetch("http://localhost:3000/users", configObj)
+  fetch("http://localhost:3000/users", object)
 };
