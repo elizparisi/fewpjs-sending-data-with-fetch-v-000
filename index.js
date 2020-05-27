@@ -8,6 +8,7 @@ function submitData(name, email) {
   };
  
   let object = {
+    method: "POST"
     headers: {
       "Content-Type": "application/json",
       "Accept": "application/json"
