@@ -16,3 +16,16 @@ function submitData(name, email) {
   };
  
 };
+
+
+  function appendNewPElement(param) {
+    let element = document.createElement("p");
+    element.innerHTML = param;``
+    document.body.appendChild(element);
+  };
+
+  return fetch("http://localhost:3000/users", obj)
+    .then(resp => resp.json())
+    .then(user => appendNewPElement(user.id))
+    .catch(error => appendNewPElement(error.message));
+};
