@@ -15,7 +15,7 @@ function submitData(name, email) {
     body: JSON.stringify(formData)
   };
   
-  fetch("http://localhost:3000/users", obj)
+  return fetch("http://localhost:3000/users", obj)
   .then(function(response) {
     return response.json();
   })
